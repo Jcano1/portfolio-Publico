@@ -1,0 +1,1 @@
+function a(t){if(t.startsWith("#"))return t;console.log(t);const n=t.match(/\d+/g);if(!n)return"#0CCCF2";const e=parseInt(n[0],10),o=parseInt(n[1],10),s=parseInt(n[2],10);return"#"+[e,o,s].map(c=>{const r=c.toString(16);return r.length===1?"0"+r:r}).join("")}export{a as r};

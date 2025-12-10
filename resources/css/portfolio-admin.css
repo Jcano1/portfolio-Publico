@@ -1,0 +1,121 @@
+.habilidad-actions {
+    position: relative;
+    z-index: 0;
+}
+
+.btn-aceptar,
+.btn-cancelar {
+    position: relative;
+    z-index: 20;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-aceptar:hover { background: rgba(0, 128, 0, 0.1); }
+.btn-cancelar:hover { background: rgba(255, 0, 0, 0.1); }
+
+#modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal > div {
+    background: #DCEFF3;
+    color: black;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    position: relative;
+}
+
+#closeModal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #666;
+    transition: color 0.2s;
+}
+
+#closeModal:hover {
+    color: #000;
+}
+
+#btAddHabilidades, #btAddProjectos {
+    border: 2px dashed #315F68;
+    border-radius: 12px;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+#btAddHabilidades:hover, #btAddProjectos:hover {
+    background: rgba(49, 95, 104, 0.2);
+}
+#modal.hidden {
+    display: none !important;
+}
+.Centrar{
+    margin-left: -30%;
+}
+.form-input-display {
+    width: 100%;
+    color: black;
+    border: 1px solid #102023; 
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    outline: none;
+    background-color: transparent;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    line-height: normal; 
+}
+
+
+.form-input-display.text-48 {
+    font-size: 48px;
+    padding-top: 5px; 
+}
+
+
+.form-input-display.text-28 {
+    font-size: 28px;
+}
+
+
+.form-input-display.text-20 {
+    font-size: 20px;
+}
+
+
+.form-input-display:focus {
+    border-color: #0CCCF2;
+    box-shadow: 0 0 0 2px #1b373b;
+}
+.form-textarea-auto {
+
+    width: 100%; 
+    
+
+    overflow-y: hidden; 
+    
+
+    resize: none; 
+    
+
+}
