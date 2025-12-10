@@ -55,7 +55,7 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('Port_Folio');
     })->name('dashboard');
 });
 
