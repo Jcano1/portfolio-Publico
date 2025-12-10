@@ -1,0 +1,62 @@
+       .caja-proyecto {
+           width: 100%;
+           display: grid;
+           margin: 20px;
+       }
+
+       .dynamic-button,
+       .btnBase {
+           width: fit-content;
+           height: fit-content;
+           display: inline-block;
+           border: none;
+           border-radius: 6px;
+           cursor: pointer;
+           transition: all 0.2s ease;
+           color: #fff;
+           background-color: #0CCCF2;
+           z-index: 2000;
+       }
+
+
+       /* ==== Tamaños fijos ==== */
+       .btn-small {
+           padding: 6px 12px;
+           font-size: 14px;
+       }
+
+       .btn-medium {
+           padding: 10px 20px;
+           font-size: 16px;
+       }
+
+       .btn-large {
+           padding: 14px 28px;
+           font-size: 18px;
+       }
+
+       .btnBase {
+           opacity: 0.85;
+           border: 2px solid transparent;
+       }
+
+       .contenido ul,
+       .contenido ol {
+           list-style-position: inside;
+           margin-left: 1.5rem;
+           padding-left: 1.5rem;
+       }
+
+       .contenido ul {
+           list-style-type: disc;
+       }
+
+       .contenido ol {
+           list-style-type: decimal;
+       }
+
+       .Column-Container {
+           display: flex;
+           flex-direction: column;
+           gap: 30px;
+       }

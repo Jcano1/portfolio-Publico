@@ -1,0 +1,158 @@
+{
+  "resources/css/Proyectos-admin.css": {
+    "file": "assets/Proyectos-admin-JSbqBkrD.css",
+    "src": "resources/css/Proyectos-admin.css",
+    "isEntry": true,
+    "names": [
+      "Proyectos-admin.css"
+    ]
+  },
+  "resources/css/Proyectos.css": {
+    "file": "assets/Proyectos-BWLh0R6C.css",
+    "src": "resources/css/Proyectos.css",
+    "isEntry": true,
+    "names": [
+      "Proyectos.css"
+    ]
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-D7vSay54.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/css/footer.css": {
+    "file": "assets/footer-CV62ZNS9.css",
+    "src": "resources/css/footer.css",
+    "isEntry": true,
+    "names": [
+      "footer.css"
+    ]
+  },
+  "resources/css/portfolio-admin.css": {
+    "file": "assets/portfolio-admin-BwYz4JFP.css",
+    "src": "resources/css/portfolio-admin.css",
+    "isEntry": true,
+    "names": [
+      "portfolio-admin.css"
+    ]
+  },
+  "resources/css/portfolio.css": {
+    "file": "assets/portfolio-CIMj-tvw.css",
+    "src": "resources/css/portfolio.css",
+    "isEntry": true,
+    "names": [
+      "portfolio.css"
+    ]
+  },
+  "resources/js/Admin-Proyectos/Button.js": {
+    "file": "assets/Button-Dk0pEh2a.js",
+    "name": "Button",
+    "src": "resources/js/Admin-Proyectos/Button.js",
+    "isEntry": true,
+    "imports": [
+      "resources/js/Helper.js"
+    ]
+  },
+  "resources/js/Admin-Proyectos/Image.js": {
+    "file": "assets/Image-DM5693sl.js",
+    "name": "Image",
+    "src": "resources/js/Admin-Proyectos/Image.js",
+    "isEntry": true
+  },
+  "resources/js/Admin-Proyectos/JsonSave.js": {
+    "file": "assets/JsonSave-yEZclrDW.js",
+    "name": "JsonSave",
+    "src": "resources/js/Admin-Proyectos/JsonSave.js",
+    "isEntry": true
+  },
+  "resources/js/Admin-Proyectos/Separator.js": {
+    "file": "assets/Separator-BNvfE2em.js",
+    "name": "Separator",
+    "src": "resources/js/Admin-Proyectos/Separator.js",
+    "isEntry": true
+  },
+  "resources/js/Admin-Proyectos/Text.js": {
+    "file": "assets/Text-Chpbee58.js",
+    "name": "Text",
+    "src": "resources/js/Admin-Proyectos/Text.js",
+    "isEntry": true
+  },
+  "resources/js/Helper.js": {
+    "file": "assets/Helper-Ct59Lgux.js",
+    "name": "Helper",
+    "src": "resources/js/Helper.js",
+    "isEntry": true
+  },
+  "resources/js/Portfolio_Habilidades.js": {
+    "file": "assets/Portfolio_Habilidades-4JKRUsNc.js",
+    "name": "Portfolio_Habilidades",
+    "src": "resources/js/Portfolio_Habilidades.js",
+    "isEntry": true
+  },
+  "resources/js/Portfolio_Habilidades_Admin.js": {
+    "file": "assets/Portfolio_Habilidades_Admin-DCJIXSqk.js",
+    "name": "Portfolio_Habilidades_Admin",
+    "src": "resources/js/Portfolio_Habilidades_Admin.js",
+    "isEntry": true,
+    "imports": [
+      "resources/js/Helper.js"
+    ]
+  },
+  "resources/js/Portfolio_Projectos-admin.js": {
+    "file": "assets/Portfolio_Projectos-admin-nRCvbTjh.js",
+    "name": "Portfolio_Projectos-admin",
+    "src": "resources/js/Portfolio_Projectos-admin.js",
+    "isEntry": true
+  },
+  "resources/js/Portfolio_Projectos.js": {
+    "file": "assets/Portfolio_Projectos-CFuRFKw_.js",
+    "name": "Portfolio_Projectos",
+    "src": "resources/js/Portfolio_Projectos.js",
+    "isEntry": true
+  },
+  "resources/js/Proyectos-admin.js": {
+    "file": "assets/Proyectos-admin-Bc467lv6.js",
+    "name": "Proyectos-admin",
+    "src": "resources/js/Proyectos-admin.js",
+    "isEntry": true,
+    "imports": [
+      "resources/js/Admin-Proyectos/Button.js",
+      "resources/js/Admin-Proyectos/Text.js",
+      "resources/js/Admin-Proyectos/Image.js",
+      "resources/js/Admin-Proyectos/Separator.js",
+      "resources/js/Admin-Proyectos/JsonSave.js",
+      "resources/js/Helper.js"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-Bj43h_rG.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/contacto_Correo.js": {
+    "file": "assets/contacto_Correo-xPB3Gp36.js",
+    "name": "contacto_Correo",
+    "src": "resources/js/contacto_Correo.js",
+    "isEntry": true
+  },
+  "resources/js/portfolio_editData.js": {
+    "file": "assets/portfolio_editData-DkNDgBX4.js",
+    "name": "portfolio_editData",
+    "src": "resources/js/portfolio_editData.js",
+    "isEntry": true
+  },
+  "resources/js/proyectos.js": {
+    "file": "assets/proyectos-CcsSn_sl.js",
+    "name": "proyectos",
+    "src": "resources/js/proyectos.js",
+    "isEntry": true,
+    "imports": [
+      "resources/js/Admin-Proyectos/Button.js",
+      "resources/js/Helper.js"
+    ]
+  }
+}

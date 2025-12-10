@@ -1,0 +1,261 @@
+       .slide {
+           width: 1280px;
+           height: 720px;
+           position: relative;
+
+       }
+
+       .column-icon {
+           transition: all 0.3s ease;
+       }
+
+       .column-icon:hover {
+           transform: translateY(-5px);
+           box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+       }
+
+       .accent-color {
+           background-color: #98FF98;
+       }
+
+       .accent-color-2 {
+           background-color: #FFB347;
+       }
+
+       .caja-proyecto {
+           width: 100%;
+           display: grid;
+           color: white;
+           border-radius: 0.75rem;
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           border: 2px dashed white;
+           position: relative;
+       }
+
+       .slide {
+           width: 1280px;
+           height: 720px;
+           position: relative;
+
+       }
+
+       .icon-grid {
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           gap: 20px;
+           opacity: 0.15;
+       }
+
+       .icon-box {
+           height: 60px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           transition: all 0.3s ease;
+       }
+
+       .icon-box:hover {
+           opacity: 0.3;
+           transform: scale(1.05);
+       }
+
+       .highlight-text {
+           background: linear-gradient(120deg, rgba(152, 255, 152, 0.2) 0%, rgba(255, 179, 71, 0.2) 100%);
+           padding: 2px 8px;
+           border-radius: 4px;
+       }
+
+       .btn-edit {
+           background-color: #eab308;
+           /* bg-yellow-500 */
+           color: #fff;
+           /* text-white */
+           padding: 0.25rem 0.5rem;
+           /* py-1 px-2 */
+           border-radius: 0.25rem;
+           /* rounded */
+           font-size: 0.75rem;
+           /* text-xs */
+           position: relative;
+           z-index: 30;
+           /* z-30 */
+       }
+
+       .btn-delete {
+           background-color: #ef4444;
+           /* bg-red-500 */
+           color: #fff;
+           /* text-white */
+           padding: 0.25rem 0.5rem;
+           /* py-1 px-2 */
+           border-radius: 0.25rem;
+           /* rounded */
+           font-size: 0.75rem;
+           /* text-xs */
+           position: relative;
+           z-index: 30;
+           /* z-30 */
+       }
+
+       .item-toolbar {
+           cursor: grab !important;
+           /* mientras arrastras */
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           display: flex;
+           justify-content: flex-end;
+           /* o center si quieres que los botones estén centrados */
+           gap: 0.25rem;
+           padding: 0.25rem;
+           opacity: 0;
+           transition: opacity 0.2s ease;
+
+       }
+
+       .item-proyecto:hover .item-toolbar {
+           opacity: 1;
+       }
+
+       .item-proyecto .contenido {
+           padding: 5px;
+           min-height: 28px;
+           position: relative;
+           z-index: 10;
+           /* debajo de la toolbar */
+           transition: background 0.2s ease;
+       }
+
+       .Container_Data {
+           min-height: 28px;
+       }
+
+       .item-proyecto:hover .contenido {
+           background: rgba(0, 0, 0, 0.3);
+           /* sombreado al hover */
+           border-radius: 0.5rem;
+           /* opcional, mismo borde que el contenido */
+       }
+
+       .item-proyecto.dragging {
+           opacity: 0.6;
+           /* opcional, efecto visual de que se está moviendo */
+           cursor: grabbing !important;
+           /* mientras arrastras */
+       }
+
+       .item-proyecto.dragging:hover .item-toolbar,
+       .item-proyecto.dragging:hover::before {
+           /* 👉 Anula el hover mientras arrastras */
+           display: none !important;
+           background: none !important;
+           opacity: 0 !important;
+       }
+
+       .box-toolbar {
+           position: absolute;
+           top: 0.5rem;
+           right: -2.5rem;
+           display: flex;
+           flex-direction: column;
+           gap: 0.25rem;
+           background: rgba(0, 0, 0, 0.6);
+           color: white;
+           padding: 4px;
+           border-radius: 6px;
+           z-index: 20;
+       }
+
+
+
+       .admin-bar {
+           z-index: 200;
+       }
+
+       #editorTexto .ql-editor {
+           min-height: 300px;
+           max-height: 500px;
+           overflow-y: auto;
+       }
+
+       .selected-sep {
+           box-shadow: 0 0 0 4px #0CCCF2 inset;
+       }
+
+       .contenido ul,
+       .contenido ol {
+           list-style-position: inside;
+           margin-left: 1.5rem;
+           padding-left: 1.5rem;
+       }
+
+       .contenido ul {
+           list-style-type: disc;
+       }
+
+       .contenido ol {
+           list-style-type: decimal;
+       }
+
+
+
+       /* ==== Botón base ==== */
+       .dynamic-button,
+       .btnBase {
+           width: fit-content;
+           height: fit-content;
+           display: inline-block;
+           border: none;
+           border-radius: 6px;
+           cursor: pointer;
+           transition: all 0.2s ease;
+           color: #fff;
+           background-color: #0CCCF2;
+           z-index: 2000;
+       }
+
+
+       /* ==== Tamaños fijos ==== */
+       .btn-small {
+           padding: 6px 12px;
+           font-size: 14px;
+       }
+
+       .btn-medium {
+           padding: 10px 20px;
+           font-size: 16px;
+       }
+
+       .btn-large {
+           padding: 14px 28px;
+           font-size: 18px;
+       }
+
+       /* ==== Vista previa ==== */
+       #btnSizeOptions {
+           display: flex;
+           gap: 1rem;
+           /* o 10px */
+           flex-wrap: wrap;
+           justify-content: center;
+       }
+
+       .btnBase {
+           opacity: 0.85;
+           border: 2px solid transparent;
+       }
+
+       .btnBase:hover {
+           opacity: 1;
+       }
+
+       .btnBase.selected {
+           border-color: #0CCCF2;
+           box-shadow: 0 0 0 2px rgba(12, 204, 242, 0.3);
+       }
+
+       .selected_button {
+           outline: 2px solid black;
+           outline-offset: 2px;
+       }
