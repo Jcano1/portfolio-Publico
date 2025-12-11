@@ -89,6 +89,25 @@ if (isset($__slots)) unset($__slots);
                     <h3 class="footer-title">Contacto</h3>
                     <p>Email: <a href="mailto:<?php echo e($admin?->email ?? 'correo@ejemplo.com'); ?>" class="footer-link"><?php echo e($admin?->email ?? 'correo@ejemplo.com'); ?></a></p>
                     <p>Puesto: <?php echo e($admin?->puesto ?? 'Desarrollador Web'); ?></p>
+                    <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(auth()->guard()->check()): ?>
+                        
+                        <form method="POST" action="<?php echo e(route('logout')); ?>" x-data>
+                            <?php echo csrf_field(); ?>
+                            
+                            <p>
+                                <a class="footer-link" 
+                                href="<?php echo e(route('logout')); ?>" 
+                                @click.prevent="$root.submit();"> 
+                                    Logout
+                                </a>
+                            </p>
+                        </form>
+                    <?php else: ?>
+                        
+                        <p><a class="footer-link" href="<?php echo e(route('login')); ?>">Login</a></p>
+                    <?php endif; ?><?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if ENDBLOCK]><![endif]--><?php endif; ?>
+
+                    
                 </div>
 
                 
@@ -111,7 +130,7 @@ if (isset($__slots)) unset($__slots);
                         <a href="https://www.linkedin.com/in/javier-cano-6897403a0/" target="_blank" class="social-link" aria-label="LinkedIn">
                             <img src="<?php echo e(asset('storage/Icons/icono_Linkedin.png')); ?>" alt="">
                         </a>
-                        <a href="#" target="_blank" class="social-link" aria-label="GitHub">
+                        <a href="https://github.com/Jcano1/portfolio-Publico" target="_blank" class="social-link" aria-label="GitHub">
                             <img src="<?php echo e(asset('storage/Icons/icono_github.png')); ?>" alt="">
                         </a>
                         

@@ -483,7 +483,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const btn = document.getElementById('btnGuardar');
     if (btn) {
-        btn.addEventListener('click', (e) => formJSON(e, { download: true, post: true }));
+        btn.addEventListener('click', (e) => formJSON(e, { download: false, post: false }));
     }
 
 });

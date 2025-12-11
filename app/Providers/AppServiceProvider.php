@@ -1,13 +1,14 @@
 <?php
 
 namespace App\Providers;
-use Illuminate\Support\Facades\URL; 
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use App\Models\User;
 
 class AppServiceProvider extends ServiceProvider
 {
+    public const HOME = '/gestion/pedidos';
     /**
      * Register any application services.
      */

@@ -14,7 +14,7 @@
 
 
     <div class="w-full h-fit  flex justify-center items-center flex-col">
-        <div class="w-[60%]  bg-[#dceff3] flex items-end justify-start p-4 rounded-xl relative">
+        <div class="w-[60%]  bg-[#dceff3] flex items-end justify-start p-4 rounded-xl relative ContainerData">
             @auth
                 <div id="ContainerButonEditData" class="absolute top-4 right-4 p-1">
                     <button id="ButonEditData">

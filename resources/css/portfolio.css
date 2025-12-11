@@ -283,15 +283,15 @@ input[type=range]::-moz-focus-outer {
 
 #ContainerButonDeleteProyect {
     max-height: 0;
-    overflow: hidden; 
-    opacity: 0; 
-    visibility: hidden; 
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
     transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, visibility 0.4s;
 }
 
 .card:hover #ContainerButonDeleteProyect {
 
-    max-height: 50px; 
+    max-height: 50px;
     opacity: 1;
     visibility: visible;
 }
@@ -463,4 +463,87 @@ input[type=range]::-moz-focus-outer {
     /* AJUSTE: Eliminar cualquier padding/margen inferior excesivo */
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+
+    /* Ajuste principal: Los contenedores principales */
+    .w-full>div:nth-child(2),
+    .w-full>div:nth-child(3),
+    #ContainerHabilidades,
+    .w-full>div:nth-child(5),
+    .ContainerData {
+        width: 95% !important;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    /* Info principal (Admin) */
+    .w-\[60\%\]>.flex.flex-col.gap-2.m-\[40px\] {
+        margin: 20px !important;
+    }
+
+    #FullNameUser {
+        font-size: 32px !important;
+        margin-bottom: 5px !important;
+    }
+
+    /* 🔴 CORRECCIÓN 1: Manejo de texto largo para el correo y el puesto */
+    #EmailUser,
+    #PostUser {
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
+        /* Estilos para truncar el texto si es muy largo */
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        /* Asegurar que no exceda el ancho del contenedor */
+        max-width: 100%;
+    }
+
+    /* 🔴 CORRECCIÓN 2: Ajustar el ancho del botón "Contactame" */
+    .w-\[60\%\] a.mb-7 {
+        width: 200px;
+        max-width: 80%;
+        text-align: center;
+        margin-bottom: 15px !important;
+        margin-right: auto;
+    }
+
+    /* Sección "Quien soy" */
+    #QuienSoy {
+        font-size: 28px !important;
+    }
+
+    /* Tarjetas de Proyectos */
+    .proyecto-card,
+    .card {
+        min-width: 80vw;
+        width: 80vw;
+        height: auto;
+    }
+
+    /* Contacto */
+    #contacto {
+        font-size: 28px !important;
+    }
+
+    .container-Contacto {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+
+    /* MODAL */
+    #modal>div {
+        width: 95% !important;
+        max-width: 95% !important;
+    }
+
 }

@@ -49,6 +49,25 @@
                     <p>Email: <a href="mailto:{{ $admin?->email ?? 'correo@ejemplo.com' }}" class="footer-link">{{
                             $admin?->email ?? 'correo@ejemplo.com' }}</a></p>
                     <p>Puesto: {{ $admin?->puesto ?? 'Desarrollador Web' }}</p>
+                    @auth
+                        {{-- Para cerrar sesión, usamos un formulario POST --}}
+                        <form method="POST" action="{{ route('logout') }}" x-data>
+                            @csrf
+                            
+                            <p>
+                                <a class="footer-link" 
+                                href="{{ route('logout') }}" 
+                                @click.prevent="$root.submit();"> {{-- ⬅️ Alpine.js fuerza el envío del formulario --}}
+                                    Logout
+                                </a>
+                            </p>
+                        </form>
+                    @else
+                        {{-- Login puede seguir siendo un enlace GET normal --}}
+                        <p><a class="footer-link" href="{{ route('login') }}">Login</a></p>
+                    @endauth
+
+                    
                 </div>
 
                 {{-- Segunda Columna: Navegación --}}
@@ -72,7 +91,7 @@
                         <a href="https://www.linkedin.com/in/javier-cano-6897403a0/" target="_blank" class="social-link" aria-label="LinkedIn">
                             <img src="{{ asset('storage/Icons/icono_Linkedin.png') }}" alt="">
                         </a>
-                        <a href="#" target="_blank" class="social-link" aria-label="GitHub">
+                        <a href="https://github.com/Jcano1/portfolio-Publico" target="_blank" class="social-link" aria-label="GitHub">
                             <img src="{{ asset('storage/Icons/icono_github.png') }}" alt="">
                         </a>
                         {{-- Añade más redes aquí --}}
