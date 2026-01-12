@@ -6,18 +6,15 @@ function crearBarra(habilidad) {
     clone.querySelector('.Name-Habilidad').textContent = habilidad.nombre;
     barra.style.backgroundColor = habilidad.colores;
 
-    // 🔹 Empieza vacía
+
     barra.style.width = '0%';
 
-    // 🔹 Convertimos nivel (0–10) a porcentaje (0–100)
     const porcentaje = Math.min(habilidad.nivel * 10, 100);
 
-    // 🔹 Después de un pequeño retraso, se anima hasta el nivel real
-    requestAnimationFrame(() => {
-        setTimeout(() => {
-            barra.style.width = `${porcentaje}%`;
-        }, 100);
-    });
+
+    setTimeout(() => {
+        barra.style.width = `${porcentaje}%`;
+    }, 150); // Un pequeño margen para asegurar que el DOM ya lo renderizó
 
     const actions = clone.querySelector('.habilidad-actions');
     if (actions) {
@@ -36,7 +33,6 @@ fetch("/habilidades")
 
         } else {
             const container = document.querySelector('#contenedor-barras');
-
             container.classList.add('grid');
             container.classList.remove('columna1', 'columna2', 'columna3');
 

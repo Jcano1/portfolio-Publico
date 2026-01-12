@@ -127,12 +127,13 @@ if (isset($__slots)) unset($__slots);
 
                     <div class="social-icons">
                         
-                        <a href="https://www.linkedin.com/in/javier-cano-6897403a0/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <img src="<?php echo e(asset('storage/Icons/icono_Linkedin.png')); ?>" alt="">
-                        </a>
-                        <a href="https://github.com/Jcano1/portfolio-Publico" target="_blank" class="social-link" aria-label="GitHub">
-                            <img src="<?php echo e(asset('storage/Icons/icono_github.png')); ?>" alt="">
-                        </a>
+                            <a href="https://www.linkedin.com/in/javier-cano-6897403a0/" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <img src="<?php echo e(asset('storage/icons/linkedin.png')); ?>" alt="LinkedIn" class="w-8 h-8 object-contain">
+                            </a>
+
+                            <a href="https://github.com/Jcano1/portfolio-Publico" target="_blank" class="social-link" aria-label="GitHub">
+                                <img src="<?php echo e(asset('storage/icons/github.webp')); ?>" alt="GitHub" class="w-8 h-8 object-contain">
+                            </a>
                         
                     </div>
                 </div>

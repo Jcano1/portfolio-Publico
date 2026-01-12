@@ -16,7 +16,7 @@
     ]
   },
   "resources/css/app.css": {
-    "file": "assets/app-D7vSay54.css",
+    "file": "assets/app-BdmL3vYz.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "names": [
@@ -57,7 +57,7 @@
     ]
   },
   "resources/js/Admin-Proyectos/Image.js": {
-    "file": "assets/Image-DM5693sl.js",
+    "file": "assets/Image-BWEFAJpD.js",
     "name": "Image",
     "src": "resources/js/Admin-Proyectos/Image.js",
     "isEntry": true
@@ -87,7 +87,7 @@
     "isEntry": true
   },
   "resources/js/Portfolio_Habilidades.js": {
-    "file": "assets/Portfolio_Habilidades-4JKRUsNc.js",
+    "file": "assets/Portfolio_Habilidades-ED839CtI.js",
     "name": "Portfolio_Habilidades",
     "src": "resources/js/Portfolio_Habilidades.js",
     "isEntry": true
@@ -114,7 +114,7 @@
     "isEntry": true
   },
   "resources/js/Proyectos-admin.js": {
-    "file": "assets/Proyectos-admin-DxI4GmA_.js",
+    "file": "assets/Proyectos-admin-owpKO1LE.js",
     "name": "Proyectos-admin",
     "src": "resources/js/Proyectos-admin.js",
     "isEntry": true,

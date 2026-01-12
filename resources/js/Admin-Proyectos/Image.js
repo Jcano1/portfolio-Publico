@@ -9,7 +9,7 @@ export function OpenImageUploader(formEditor, img = null) {
             </label>
             <label class="flex flex-col">
                 Ancho (px):
-                <input type="number" id="inputWidth" class="border rounded p-2" value="150">
+                <input type="number" id="inputWidth" class="border rounded p-2" value="500">
             </label>
         `;
     if (img) {

@@ -18,7 +18,7 @@
             @auth
                 <div id="ContainerButonEditData" class="absolute top-4 right-4 p-1">
                     <button id="ButonEditData">
-                        <img src="{{ asset('storage/Icons/icono_lapiz.png') }}" alt="Lápiz de edición" class="h-6 w-6" />
+                        <img src="{{ asset('storage/icons/editar.png') }}" alt="Lápiz de edición" class="h-6 w-6 invert" />
                     </button>
                 </div>
             @endauth
@@ -33,7 +33,8 @@
                 <h3 class="text-left mb-[30px] text-[28px] " id="EmailUser">{{ $admin?->email ?? 'No hay admin' }}</h3>
                 <h4 class="text-left mb-[30px] text-[20px] " id="PostUser">{{ $admin?->puesto ?? 'No hay admin' }}</h4>
 
-                <a class="mb-7 bg-[#0cccf2] rounded-xl px-[20px] py-2 font-semibold w-fit hover:text-white"  href="#contacto">
+                <a class="mb-7 bg-[#0cccf2] rounded-xl px-[20px] py-2 font-semibold w-fit hover:text-white"
+                    href="#contacto">
                     Contactame
                 </a>
             </div>
@@ -42,8 +43,8 @@
             @auth
                 <div id="ContainerButonEditDescription" class="absolute top-4 right-4 p-1">
                     <button id="ButonEditDescription">
-                        <img src="{{ asset('storage/Icons/icono_lapiz.png') }}" alt="Lápiz de edición"
-                            class="h-6 w-6 invert" />
+                        <img src="{{ asset('storage/icons/editar.png') }}" alt="Lápiz de edición"
+                            class="h-6 w-6" />
                     </button>
                 </div>
             @endauth
@@ -63,7 +64,7 @@
                             @endauth
                         </div>
                         <div class="w-full bg-color_fondo_barra rounded-full h-4 Container-prueba">
-                            <div class="h-4 rounded-full Barra-Color"></div>
+                            <div class="h-4 rounded-full Barra-Color w-0 transition-all duration-[1000ms] ease-out"></div>
                         </div>
                     </div>
                 </template>
